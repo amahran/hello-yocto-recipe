@@ -1,0 +1,11 @@
+build*
+*.m4
+*.cache
+configure
+*.in
+*.log
+*.status
+yocto_recipe
+*deps
+Makefile
+*.o
