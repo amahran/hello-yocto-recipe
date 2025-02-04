@@ -11,7 +11,6 @@ target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Werror)
 include(GNUInstallDirs)
 install(
   TARGETS ${PROJECT_NAME}
-  CONFIGURATIONS Debug Release RelWithDebInfo MinSizeRel
   RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
           PERMISSIONS OWNER_READ OWNER_EXECUTE GROUP_READ GROUP_EXECUTE
                       WORLD_READ WORLD_EXECUTE)
