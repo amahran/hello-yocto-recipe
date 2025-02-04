@@ -4,11 +4,11 @@ A simple C program with multiple build system generators (CMake, Autoconf & Meso
 to be used as a test/exmaple recipe in the Yocto project
 
 # Artifacts
-`yocto-recipe` program
+`yocto_recipe` program
 
 ## Add the recipe to Yocto
 ```shell
-devtool add https://github.com/amahran/hello-yocto-recipe
+devtool add -B main https://github.com/amahran/hello-yocto-recipe.git
 ```
 
 ## Edit the recipe
@@ -32,5 +32,6 @@ bitbake core-image-minimal
 ## Test the recipe artifacts
 After booting into your target (e.g. beaglebone), you can run the recipe using:
 ```shell
-yocto-recipe
+$ yocto_recipe
+Greetings: yocto_recipe
 ```
